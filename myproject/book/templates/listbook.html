@@ -1,0 +1,10 @@
+{% extends 'navbar.html' %}
+
+{% block content %}
+<h1 class="text-black">Libros con valoración mayor a 1500</h1>
+<ul>
+    {% for book in books %}
+    <li>Título: {{ book.title }}, Autor: {{ book.author }}, Valoración: {{ book.rating }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
